@@ -2,24 +2,27 @@ import { Link } from "react-router-dom"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import Layout from "@/components/Layout";
+import Team from "@/components/Team";
 
 const About = () => {
   return (
 		<Layout>
-			<section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-muted">
-				<div className="container px-4 md:px-6">
-					<div className="flex flex-col items-center space-y-4 text-center">
-						<div className="space-y-2">
-							<h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
-								About Jacob's mineral water
-							</h1>
-							<p className="mx-auto max-w-[700px] md:text-xl">
-								Discover the story behind nature's purest hydration
-							</p>
-						</div>
-					</div>
-				</div>
-			</section>
+      <div style={{backgroundImage: `url(https://www.google.com/chrome/static/images/shapes-dark.png)`}} className="bg-fixed mt-16">
+        <section className="w-full py-12 md:py-24 lg:py-32 xl:py-32">
+          <div className="container px-4 md:px-6">
+            <div className="flex flex-col items-center space-y-4 text-center">
+              <div className="space-y-2">
+                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
+                  About Jacob's mineral water
+                </h1>
+                <p className="mx-auto max-w-[700px] md:text-xl">
+                  Discover the story behind nature's purest hydration
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+       </div>
 			<section className="w-full py-12 md:py-24 lg:py-32">
 				<div className="container px-4 md:px-6">
 					<div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
@@ -28,7 +31,6 @@ const About = () => {
 							className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
 							height="310"
 							src="/placeholder.svg?height=310&width=550"
-							width="550"
 						/>
 						<div className="flex flex-col justify-center space-y-4">
 							<div className="space-y-2">
@@ -120,33 +122,19 @@ const About = () => {
 			<section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100">
 				<div className="container px-4 md:px-6">
 					<div className="flex flex-col items-center justify-center space-y-4 text-center">
+            <p className="text-xl text-gray-500 font-extrabold">
+             Quality You Can Trust: Our Commitment to Excellence 
+            </p>
+            <p className="text-xl text-gray-500">
+              At Jacob's, we are proud to be KEBS certified, ensuring that every drop of water meets the highest standards of quality and safety. This certification from the Kenya Bureau of Standards is a testament to our dedication to delivering premium bottled water that you can rely on for purity and peace of mind.
+            </p>
 						<div className="space-y-2">
 							<h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-primary">Our Team</h2>
 							<p className="mx-auto max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-								Meet the passionate individuals behind Pure Essence Waters
+								Meet the passionate individuals behind Jacob's mineral Water
 							</p>
 						</div>
-					</div>
-					<div className="mx-auto grid max-w-5xl items-center gap-6 py-12 md:grid-cols-3 md:gap-12">
-						{/* Add team member cards here */}
-						<p className="text-center col-span-3">Team member profiles coming soon!</p>
-					</div>
-				</div>
-			</section>
-			<section className="w-full py-12 md:py-24 lg:py-32 bg-blue-50">
-				<div className="container px-4 md:px-6">
-					<div className="flex flex-col items-center justify-center space-y-4 text-center">
-						<div className="space-y-2">
-							<h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Experience Pure Essence</h2>
-							<p className="mx-auto max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-								Ready to taste the difference? Try Pure Essence Waters today and experience nature's finest hydration.
-							</p>
-						</div>
-						<div className="w-full max-w-sm space-y-2">
-							<Button className="w-full" size="lg">
-								Shop Now
-							</Button>
-						</div>
+            <Team />
 					</div>
 				</div>
 			</section>

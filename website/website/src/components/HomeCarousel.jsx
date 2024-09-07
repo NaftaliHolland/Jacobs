@@ -36,7 +36,7 @@ const HomeCarousel = () => {
   }, [currentIndex]);
 
   return (
-    <section className="w-full">
+    <section className="w-full mt-16">
       <div className="max-w-[1800px] h-[450px] w-full m-auto">
         <div style={{backgroundImage: `url(${slides[currentIndex].url})` }}
           className="w-full h-full bg-center bg-cover transition-all duration-700 ease-in-out"></div>

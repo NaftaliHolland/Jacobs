@@ -97,36 +97,36 @@ export default function Component() {
             </div>
           </div>
         </section>
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-muted">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-slate-200">
           <div className="container px-4 md:px-24">
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
               <div>
                 <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Our Process</div>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Purified to Perfection</h2>
-                <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-primary">Purified to Perfection</h2>
+                <p className="max-w-[600px] text-primary md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   At Aqua Vitae, we use a state-of-the-art purification process to ensure that our water is free from
                   impurities and contaminants, delivering the purest and most refreshing drinking experience.
                 </p>
               </div>
               <div className="grid gap-4">
                 <div className="rounded-lg border p-4">
-                  <Filter className="h-12 w-12 " />
-                  <h3 className="mt-4 text-lg font-bold">Filtration</h3>
-                  <p className="text-muted-foreground">
+                  <Filter className="h-12 w-12 text-primary" />
+                  <h3 className="mt-4 text-lg font-bold text-primary">Filtration</h3>
+                  <p className="text-primary">
                     Our water undergoes a multi-stage filtration process to remove impurities and contaminants.
                   </p>
                 </div>
                 <div className="rounded-lg border p-4">
-                  <Droplets className="h-12 w-12" />
-                  <h3 className="mt-4 text-lg font-bold">Purification</h3>
-                  <p className="text-muted-foreground">
+                  <Droplets className="h-12 w-12 text-primary" />
+                  <h3 className="mt-4 text-lg font-bold text-primary">Purification</h3>
+                  <p className="text-primary">
                     We use advanced purification techniques to ensure the highest level of water purity.
                   </p>
                 </div>
                 <div className="rounded-lg border p-4">
-                  <Milk className="h-12 w-12" />
-                  <h3 className="mt-4 text-lg font-bold">Bottling</h3>
-                  <p className="text-muted-foreground">
+                  <Milk className="h-12 w-12 text-primary" />
+                  <h3 className="mt-4 text-lg font-bold text-primary">Bottling</h3>
+                  <p className="text-primary">
                     Our water is carefully bottled in a sterile environment to maintain its purity.
                   </p>
                 </div>
